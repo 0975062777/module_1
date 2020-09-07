@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<table>
+			<tr>
+				<td style="width: 100px;">Chiều Rộng:</td>
+				<td><input type="number" style="width: 250px" id="cwidth"></td>
+			</tr>
+			<tr>
+				<td style="width: 100px">Chiều Cao:</td>
+				<td><input type="text" style="width: 250px" id="cheight"></td>
+			</tr>
+		</table>
+		<p id="demo"></p>
+		<button type="button" onclick="myDienTich()">Diện tích</button>
+	</form>
+	<script>
+		function myDienTich() {
+			var cw = document.getElementById("cwidth").value;
+			var cc = document.getElementById("cheight").value;
+			var w = parseInt(cw);
+			var c = parseInt(cc);
+			var dt = w*c;
+			return document.getElementById("demo").innerHTML = "Diện tích hình chữ nhật là:" + dt;
+		}
+
+	</script>
+</body>
+</html>
