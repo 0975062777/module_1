@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>Weight:</td>
+			<td><input type="number" id="weight"></td>
+		</tr>
+		<tr>
+			<td>Height:</td>
+			<td><input type="number" id="height"></td>
+		</tr>
+	</table>
+
+	<button type="button" onclick="cnct()">Click me!</button>
+	<p id="demo"></p>
+	
+	<script>
+		
+		function cnct() {
+			var cw = document.getElementById("weight").value;
+			var ch = document.getElementById("height").value;
+			var w = parseInt(cw);
+			var h = parseInt(ch);
+			var bmi = w/h*h;
+
+			if (bmi < 18) {
+				document.getElementById("demo").innerHTML = "Chỉ số khối cơ thể là:" + "Underweight";
+			}
+			else if (bmi < 25.0) {
+				document.getElementById("demo").innerHTML = "Chỉ số khối cơ thể là:" + "Normal";
+			}
+			else if (bmi < 30.0) {
+				document.getElementById("demo").innerHTML = "Chỉ số khối cơ thể là:" + "Overweight";
+			}
+			else {
+				document.getElementById("demo").innerHTML = "Chỉ số khối cơ thể là:" + "Obese";
+			}
+			
+		}
+
+		
+
+	</script>
+
+
+</body>
+</html>
