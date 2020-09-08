@@ -28,35 +28,31 @@
 	<div class="maytinh">
 		<table>
 			<tr>
-				<td colspan="5" style="padding-right: 10px;"><input value=" " type="text" id="demo" style="height: 50px; width: 100%;"></td>
+				<td colspan="4" style="padding-right: 10px;"><input value=" " type="text" id="demo" style="height: 50px; width: 100%;"></td>
 			</tr>
 			<tr>
 				<td><button type="button" onclick="button1(7)">7</button></td>
 				<td><button type="button" onclick="button1(8)">8</button></td>
 				<td><button type="button" onclick="button1(9)">9</button></td>
-				<td><button type="button" onclick="button1('/')">/</button></td>
-				<td><button type="button" onclick="button1('%')">%</button></td>
+				<td><button type="button" onclick="button1('+')">+</button></td>
 			</tr>
 			<tr>
 				<td><button type="button" onclick="button1(4)">4</button></td>
 				<td><button type="button" onclick="button1(5)">5</button></td>
 				<td><button type="button" onclick="button1(6)">6</button></td>
-				<td><button type="button" onclick="button1('*')">*</button></td>
-				<td><button type="button" onclick="button1('1/x')">1/x</button></td>
+				<td><button type="button" onclick="button1('-')">-</button></td>
 			</tr>
 			<tr>
 				<td><button type="button" onclick="button1(1)">1</button></td>
 				<td><button type="button" onclick="button1(2)">2</button></td>
 				<td><button type="button" onclick="button1(3)">3</button></td>
-				<td><button type="button" onclick="button1('-')">-</button></td>
-				<td><button type="button" onclick="button1('+')">+</button></td>
+				<td><button type="button" onclick="button1('x')">X</button></td>
 			</tr>
 			<tr>
+				<td><button type="button" onclick="button1('C')">C</button></td>
 				<td><button type="button" onclick="button1(0)">0</button></td>
-				<td><button type="button" onclick="button1()">CE</button></td>
-				<td><button type="button" onclick="button1()">C</button></td>
-				<td><button type="button" onclick="button1(',')">,</button></td>
-				<td><button type="button" onclick="sum()" id="sume">=</button></td>
+				<td><button type="button" id="tinh" onclick="inra()">=</button></td>
+				<td><button type="button" onclick="button1('/')">/</button></td>
 			</tr>
 			
 		</table>
@@ -66,11 +62,11 @@
 		function button1(num) {
 			document.getElementById("demo").value += num;
 		}
-		function sum() {
-			var gt = document.getElementById("demo").value += num;
-			var gtt = parseInt(gt);
-			var sm = gtt + gtt;
-			return document.getElementById("demo").value = sm;
+		function inra() {
+			var ttoan = document.getElementById("demo").value += num;
+			var tto = document.getElementById("demo").value(ttoan);
+			var tt = parseInt(tto);
+			return document.getElementById("demo").innerHTML = tt;
 		}
 	</script>
 </body>

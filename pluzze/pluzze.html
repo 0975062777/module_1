@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+		}
+		.anime {
+			width: 300px;
+			height: 100px;
+			margin: 10px auto;
+		}
+		.anime #cat11 {
+			margin-top: 0px;
+		}
+		.anime #panda11 {
+			margin-top: 0px;
+		}
+		.anime img {
+			max-width: 100%;
+			min-height: 100px;
+		}
+
+		#panda11, 
+		#panda12, 
+		#panda13, 
+		#panda14 {
+			display: none;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<div class="anime">
+		<img src="img/cat1.jpg" id="cat11" onclick="cat1()">
+		<img src="img/panda1.jpg" id="panda11" onclick="panda1()">
+	</div>
+
+	<div class="anime">
+		<img src="img/cat2.jpg" id="cat12" onclick="cat2()">
+		<img src="img/panda2.jpg" id="panda12" onclick="panda2()">
+	</div>
+
+	<div class="anime">
+		<img src="img/cat3.jpg" id="cat13" onclick="cat3()">
+		<img src="img/panda3.jpg" id="panda13" onclick="panda3()">
+	</div>
+
+	<div class="anime">
+		<img src="img/cat4.jpg" id="cat14" onclick="cat4()">
+		<img src="img/panda4.jpg" id="panda14" onclick="panda4()">
+	</div>
+
+	<script>
+		function cat1() {
+			document.getElementById("panda11").style.display = 'block';
+			document.getElementById("cat11").style.display = 'none'; 
+		}
+		function panda1() {
+			document.getElementById("cat11").style.display = 'block';
+			document.getElementById("panda11").style.display = 'none';
+		}
+
+		function cat2() {
+			document.getElementById("panda12").style.display = 'block';
+			document.getElementById("cat12").style.display = 'none'; 
+		}
+		function panda2() {
+			document.getElementById("cat12").style.display = 'block';
+			document.getElementById("panda12").style.display = 'none';
+		}
+
+		function cat3() {
+			document.getElementById("panda13").style.display = 'block';
+			document.getElementById("cat13").style.display = 'none'; 
+		}
+		function panda3() {
+			document.getElementById("cat13").style.display = 'block';
+			document.getElementById("panda13").style.display = 'none';
+		}
+
+		function cat4() {
+			document.getElementById("panda14").style.display = 'block';
+			document.getElementById("cat14").style.display = 'none'; 
+		}
+		function panda4() {
+			document.getElementById("cat14").style.display = 'block';
+			document.getElementById("panda14").style.display = 'none';
+		}
+	</script>
+
+</body>
+</html>
