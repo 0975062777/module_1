@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="2"><input type="number" id="number1"></td>
+			<td colspan="2"><input type="number" id="number2"></td>
+		</tr>
+		<tr>
+			<td><button type="button" onclick="addition()">Addition(+)</button></td>
+			<td><button type="button" onclick="subtraction()">Subtraction(-)</button></td>
+			<td><button type="button" onclick="multiplication()">Multiplication(X)</button></td>
+			<td><button type="button" onclick="division()">Division(/)</button></td>
+		</tr>
+	</table>
+	<br>
+
+	<p id="demo"></p>
+
+	<script>
+		function addition() {
+			var nb1 = document.getElementById("number1").value;
+			var nb2 = document.getElementById("number2").value;
+			var n1 = parseInt(nb1);
+			var n2 = parseInt(nb2);
+			var n=n1+n2;
+			return document.getElementById("demo").innerHTML = "Tổng của 2 số là:" + n;
+		}
+		function subtraction() {
+			var nb1 = document.getElementById("number1").value;
+			var nb2 = document.getElementById("number2").value;
+			var n1 = parseInt(nb1);
+			var n2 = parseInt(nb2);
+			var n=n1-n2;
+			return document.getElementById("demo").innerHTML = "Tổng của 2 số là:" + n;
+		}
+		function multiplication() {
+			var nb1 = document.getElementById("number1").value;
+			var nb2 = document.getElementById("number2").value;
+			var n1 = parseInt(nb1);
+			var n2 = parseInt(nb2);
+			var n=n1*n2;
+			return document.getElementById("demo").innerHTML = "Tổng của 2 số là:" + n;
+		}
+		function division() {
+			var nb1 = document.getElementById("number1").value;
+			var nb2 = document.getElementById("number2").value;
+			var n1 = parseInt(nb1);
+			var n2 = parseInt(nb2);
+			var n=n1/n2;
+			return document.getElementById("demo").innerHTML = "Tổng của 2 số là:" + n;
+		}
+	</script>
+</body>
+</html>

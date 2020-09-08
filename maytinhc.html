@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			padding: 0px;
+			margin: 0px;
+		}
+		.maytinh {
+			/*display: inline-block;*/
+			/*margin: auto auto;*/
+			width: 100%;
+			height: 100%;
+			/*border: 1px solid red;*/
+		}
+		table {
+			margin: 200px auto 0;
+		}
+		td button {
+			width:50px; 
+		}
+	</style>
+</head>
+<body>
+	<div class="maytinh">
+		<table>
+			<tr>
+				<td colspan="5" style="padding-right: 10px;"><input value=" " type="text" id="demo" style="height: 50px; width: 100%;"></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="button1(7)">7</button></td>
+				<td><button type="button" onclick="button1(8)">8</button></td>
+				<td><button type="button" onclick="button1(9)">9</button></td>
+				<td><button type="button" onclick="button1('/')">/</button></td>
+				<td><button type="button" onclick="button1('%')">%</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="button1(4)">4</button></td>
+				<td><button type="button" onclick="button1(5)">5</button></td>
+				<td><button type="button" onclick="button1(6)">6</button></td>
+				<td><button type="button" onclick="button1('*')">*</button></td>
+				<td><button type="button" onclick="button1('1/x')">1/x</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="button1(1)">1</button></td>
+				<td><button type="button" onclick="button1(2)">2</button></td>
+				<td><button type="button" onclick="button1(3)">3</button></td>
+				<td><button type="button" onclick="button1('-')">-</button></td>
+				<td><button type="button" onclick="button1('+')">+</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="button1(0)">0</button></td>
+				<td><button type="button" onclick="button1()">CE</button></td>
+				<td><button type="button" onclick="button1()">C</button></td>
+				<td><button type="button" onclick="button1(',')">,</button></td>
+				<td><button type="button" onclick="sum()" id="sume">=</button></td>
+			</tr>
+			
+		</table>
+	</div>
+
+	<script>
+		function button1(num) {
+			document.getElementById("demo").value += num;
+		}
+		function sum() {
+			var gt = document.getElementById("demo").value += num;
+			var gtt = parseInt(gt);
+			var sm = gtt + gtt;
+			return document.getElementById("demo").value = sm;
+		}
+	</script>
+</body>
+</html>
