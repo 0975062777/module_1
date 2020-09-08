@@ -46,7 +46,7 @@
 				<td><button type="button" onclick="button1('*')">X</button></td>
 			</tr>
 			<tr>
-				<td><button type="button" onclick="button1('C')">C</button></td>
+				<td><button type="button" onclick="res()">C</button></td>
 				<td><button type="button" onclick="button1(0)">0</button></td>
 				<td><button type="button" onclick="inra()">=</button></td>
 				<td><button type="button" onclick="button1('/')">/</button></td>
@@ -62,6 +62,9 @@
 		function inra() {
 			let a = document.getElementById("demo").value;
 			document.getElementById("demo").value = eval(a);
+		}
+		function res() {
+			document.getElementById("demo").value = "";
 		}
 	</script>
 </body>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	
+		<h1>Do you love me?</h1>
+		<br>
+		<button type="button" id="yes" onclick="co()">Yes</button>
+		<button type="button" style="position: relative;" id="no" onmouseover="khong()">No</button>
+
+	<script>
+		
+		function co() {
+			alert('<3');
+		}
+
+		function khong() {
+			var height = window.innerHeight;
+			var width = window.innerWidth;
+			var x = Math.floor(Math.random()*width)+"px";
+			var k = Math.floor(Math.random()*height)+"px";
+			document.getElementById("no").style.left = k;
+			document.getElementById("no").style.top = x;
+		}
+
+	</script>
+
+</body>
+</html>
