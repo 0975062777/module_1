@@ -46,7 +46,7 @@
 				<td><button type="button" onclick="button1(1)">1</button></td>
 				<td><button type="button" onclick="button1(2)">2</button></td>
 				<td><button type="button" onclick="button1(3)">3</button></td>
-				<td><button type="button" onclick="button1('x')">X</button></td>
+				<td><button type="button" onclick="button1('*')">X</button></td>
 			</tr>
 			<tr>
 				<td><button type="button" onclick="button1('C')">C</button></td>
@@ -63,10 +63,8 @@
 			document.getElementById("demo").value += num;
 		}
 		function inra() {
-			var ttoan = document.getElementById("demo").value += num;
-			var tto = document.getElementById("demo").value(ttoan);
-			var tt = parseInt(tto);
-			return document.getElementById("demo").innerHTML = tt;
+			let a = document.getElementById("demo").value;
+			document.getElementById("demo").value = eval(a);
 		}
 	</script>
 </body>
