@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<p>Bài 1: Viết chương trình hiển thị chuỗi “The number is N” 5 lần sử dụng vòng lặp for. Với N sẽ hiển thị từ 0 đến 5.</p>
+
+	<h2>JavaScript Loops</h2>
+	<p id="demo"></p>
+	<script>
+		let text = "";
+		let i;
+		for (i = 0; i < 5; i++) {
+			text += "The number is " + i + "<br>";
+		}
+		document.getElementById("demo").innerHTML = text;
+	</script>
+
+	<p>Bài 2: Viết chương trình nhập vào một số bất kỳ lớn hơn 0. Tính tổng các phần tử từ 1 đến số vừa nhập vào.</p>
+
+	<input type="text" id="number">
+	<button type="button" onclick="tinhtong()">Click me!</button>
+	<p id="total"></p>
+
+	<script type="text/javascript">
+		function tinhtong() {
+			var number = document.getElementById("number").value;
+			var x = parseInt(number);
+			var total = 0;
+			var i = 1;
+			for (; i <= x; i +=1) {
+				total = total + i;
+			}
+			document.getElementById("total").innerHTML = "Tổng các phần tử là:" + total;
+		}
+		
+	</script>
+
+</body>
+</html>
