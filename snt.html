@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style></style>
+</head>
+<body>
+	
+    <script>
+        let numbers = +prompt("Nhập số lượng số nguyên tố cần in ra: ");
+        let N = 2;
+        let count = 0;
+        while (count < numbers) {
+            if (SNT(N) == true) {
+                document.write(N + " là snt" + "<br>");
+                count += 1;
+            }
+            N++;
+        }
+
+        function SNT(N) {
+            if (N < 2) {
+                return false;
+            }
+            if (N == 2) {
+                return true;
+            }
+            for (let i = 2; i < N; i++) {
+                if (N % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+    </script>
+
+</body>
+</html>
